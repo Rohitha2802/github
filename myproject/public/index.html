@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Medical Records</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #61b2db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(0 ,0 ,0 ,0.5);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+
+
+
+            width: 90%;
+            max-width: 400px;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: wheat;
+        }
+        .container marquee{
+        color: wheat;
+        }
+        .button {
+            background-color: #75b5ca;
+            color: rgb(1, 1, 1);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px 0;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Medihistory</h1>
+        <marquee scrollamount="30"scrolldelay="500">"New user? Sign up instead of logging in."</marquee>
+        <button class="button" onclick="location.href='hospital_signup.html'">Hospital Management Sign Up</button>
+        <button class="button" onclick="location.href='patient_signup.html'">Patient Sign Up</button>
+        <button class="button" onclick="location.href='hospital_signin.html'">Hospital Management Sign In</button>
+        <button class="button" onclick="location.href='patient_signin.html'">Patient Sign In</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Sign Up</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #61b2db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(0 ,0 ,0 ,0.5);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: wheat;
+        }
+        .input-field {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        .button {
+            background-color: #75b5ca;
+            color: rgb(1, 1, 1);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px 0;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Sign Up</h1>
+        <form action="/patient_signup" method="POST">
+            <input type="text" name="patient_name" class="input-field" placeholder="enter user name" required><br>
+            <input type="number" name="patient_age" class="input-field" placeholder="Patient Age" required><br>
+            <input type="tel" name="patient_mobile_number" class="input-field" placeholder="Mobile Number" required><br>
+            <input type="date" name="patient_date_of_birth" class="input-field" placeholder="Date of Birth" required><br>
+            <input type="password" name="patient_privacy_password" class="input-field" placeholder="Privacy Password" required><br>
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
